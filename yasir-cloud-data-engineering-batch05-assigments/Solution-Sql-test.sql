@@ -29,7 +29,7 @@ HAVING COUNT(DISTINCT pod.ProductID) > 10;
 
 
 
---Question No_03
+--Question No 03
 SELECT
     p.ProductID,
     p.Name AS ProductName,
@@ -48,7 +48,7 @@ GROUP BY p.ProductID, p.Name;
 
 
 
---Question No_04
+--Question No 04
 SELECT
     c.CategoryID,
     c.Name AS CategoryName,
@@ -66,7 +66,7 @@ WHERE p.Price = (
 
 
 
---Question No_05
+--Question No 05
 SELECT
     so.OrderID,
     c.Name AS CustomerName,
@@ -93,7 +93,7 @@ INNER JOIN Supplier s
 
 
 
-    --Question No_06
+    --Question No 06
     SELECT
     sh.ShipmentID,
     l.Name AS WarehouseName,
@@ -117,7 +117,7 @@ INNER JOIN Product p
 
 
 
-    --Question No_07
+    --Question No 07
     WITH RankedOrders AS
 (
     SELECT
@@ -145,7 +145,7 @@ WHERE OrderRank <= 3;
 
 
 
---Question No_08
+--Question No 08
 SELECT
     p.ProductID,
     p.Name AS ProductName,
@@ -173,7 +173,7 @@ INNER JOIN SalesOrder so
 
 
 
---Question No_09
+--Question No 09
     CREATE VIEW vw_CustomerOrderSummary
 AS
 SELECT
@@ -191,7 +191,7 @@ GO
 
 
 
---Question No_10
+--Question No 10
 CREATE PROCEDURE sp_GetSupplierSales
     @SupplierID INT
 AS
